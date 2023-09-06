@@ -228,7 +228,7 @@ const Skills=()=>{
   let skills=[
     {
       name:"Frontend",
-      skill:["HTML",'CSS',"React","Next"]
+      skill:["HTML",'CSS','Javascript',"React js","Next js"]
     },
     {
       name:"Backend",

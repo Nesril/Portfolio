@@ -1,0 +1,76 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    position: absolute;
+    width: 90%;
+    top: 0;
+    z-index: 3;
+    color: white;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+}
+.header-nav div{
+    cursor: pointer;transition: 0.3s;
+}
+.header-nav div:hover{
+    color: rgb(138, 105, 201);
+}
+.header-logo img{
+ border-radius: 100px;
+ background:transparent;
+ 
+}
+.active {
+    color: rgb(138, 105, 201);
+  }
+
+.sized_header_container{
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    z-index: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sized_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: rgba(43, 31, 87, 0.658);
+    border-radius: 30px ;
+    padding:10px ;
+    transition: 0.3s;
+    box-shadow:  rgb(103, 90, 151) 0px 54px 55px,  rgb(103, 90, 151) 0px -12px 30px,  rgb(103, 90, 151) 0px 4px 6px,  rgb(103, 90, 151)0px 12px 13px,  rgb(103, 90, 151) 0px -3px 5px;
+}
+.sized_header img{
+    cursor: pointer;
+    width: 40px;
+    transition: 0.3s;
+}
+.sized_header div{
+    background-color: rgb(103, 90, 151);
+    border-radius: 100%;
+    transition: 0.3s;
+}
+.sized_header .active{
+    transform: translateY(-20px);
+    background-color: rgb(59, 18, 207);
+}
+.sized_header .active button{
+    color: antiquewhite;
+
+}
+@media(max-width:400px){
+    .sized_header{
+        width: 100%;
+    }
+}

@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <div className='Home'>
       <LinesOnPage/>
-      <FirstView/>
+      {/*<FirstView/>*/}
       <FirstViewText/>
     </div>
   )

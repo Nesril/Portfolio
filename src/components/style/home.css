@@ -14,7 +14,7 @@
 .bubble-container{
     position: relative;
     overflow: hidden;
-    z-index: 2;
+    z-index: 1;
     transition: 0.3s;
     height: 110vh;
 }
@@ -101,20 +101,20 @@
     left: -10px;
     width: 15px;
     height: 15px;
-    background-color:  rgb(112, 76, 158);
+    background-color:  rgb(118, 85, 161);
     border-radius: 50%;
     z-index: 1;
 }
 
 .each-lines:nth-child(2):before {
-    animation: bubble 10s linear infinite;
+    animation: bubble 8s linear infinite;
 }
 .each-lines:nth-child(4):before {
-    animation: bubble 8s linear infinite;
+    animation: bubble 10s linear infinite;
 }
 
 .each-lines:nth-child(6):before {
-    animation: bubble 10s linear infinite 2s;
+    animation: bubble 12s linear infinite 2s;
 }
 
 .each-lines:nth-child(8):before {
@@ -125,17 +125,17 @@
     animation: bubble 10s linear infinite;
 }
 .each-lines:nth-child(12):before {
-    animation: bubble 8s linear infinite;
+    animation: bubble 12s linear infinite;
 }
 
 .each-lines:nth-child(14):before {
-    animation: bubble 10s linear infinite 2s;
+    animation: bubble 8s linear infinite 2s;
 }
 
 .each-lines:nth-child(16):before {
-    animation: bubble 8s linear infinite 4s;
+    animation: bubble 10s linear infinite 4s;
 }.each-lines:nth-child(18):before {
-    animation: bubble 10s linear infinite;
+    animation: bubble 12s linear infinite;
 }
 .each-lines:nth-child(20):before {
     animation: bubble 8s linear infinite;
@@ -146,12 +146,12 @@
 }
 
 .each-lines:nth-child(24):before {
-    animation: bubble 8s linear infinite 4s;
+    animation: bubble 12s linear infinite 4s;
 }.each-lines:nth-child(1):before {
     animation: bubble 10s linear infinite;
 }
 .each-lines:nth-child(26):before {
-    animation: bubble 8s linear infinite;
+    animation: bubble 10s linear infinite;
 }
 
 
@@ -170,11 +170,17 @@
 
 .Home-lists{
     position: relative;
-    top: -35em;
+    top: 150px;
     width: 100%;
     z-index: 5;
     font-family: 'Nunito Sans', sans-serif;
     transition: 0.3s;
+    
+}
+@media(max-width:800px){
+    .Home-lists{
+        top: 60px;
+    }
 }
 
 .Home-desc{
@@ -490,7 +496,8 @@ width: 100%;
     align-items: center;
     gap: 20px;
      height: 60px;
-     margin-bottom: -450px;
+     margin-bottom:150px;
+     padding-bottom: 90px;
 }
 
 .home-contact-links-email{ 

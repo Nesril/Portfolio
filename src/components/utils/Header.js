@@ -30,7 +30,6 @@ export default function Header() {
         currentSection = section.id;
       }
     });
-   console.log(currentSection);
     setActiveSection(currentSection);
   };
 
@@ -60,7 +59,6 @@ export default function Header() {
 
  window.addEventListener("scroll",handleScroll)
  },[scroly])
- console.log(scrollEffect,matches);
   return (
     <>
        {(matches||scrollEffect)?

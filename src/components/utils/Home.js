@@ -32,12 +32,13 @@ export default function Home() {
 }
 
 const FirstView=()=>{
-let arr=[10,20,30,40,55,60,70,80,90,100,10,1,1,1,1,1,1,1,1,1,1,1,1,11,1,1,1,1,1,1,1,1,11,,11,]
+let arr=[10,20,30,40,55,60,70,80,90,100,10,1,1,1,1,1,1,1]
+   
   return(
     <div className="bubble-container">
       <div className="wrapper">
          {arr.map((e,index)=>{
-          return <div style={{animationDelay:`${index}s`,left:`${e}px`}} key={index}></div>
+          return <div style={{animationDelay:`${index+3}s`,left:`${e}px`}} key={index}></div>
          })}
       
       </div>
@@ -46,8 +47,12 @@ let arr=[10,20,30,40,55,60,70,80,90,100,10,1,1,1,1,1,1,1,1,1,1,1,1,11,1,1,1,1,1,
 }
 
 const LinesOnPage=()=>{
-  let arr=[1,2,3,4,5,6,7,8,9,10,1,1,1,1,1,1,1,4345,4,,4,44,,4,4,5,5,55,52]
-  return(
+  let [arr,setArr]=useState([1,2,3,4,5,6,7,8,9,10,1,1,1,1,1,1,1,4345,4,4,44,4,4,5])  
+  const matches = useMediaQuery('(max-width:800px)');
+  useEffect(()=>{
+    if(matches) setArr([1,2,3,4,5,6,7,8,9,10,1,1,1,])
+  },[matches])
+    return(
     <div className="line-container">
          {arr.map((e,index)=>{
           return <div className='each-lines' key={index}></div>

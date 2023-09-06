@@ -41,9 +41,11 @@
 	position: relative;
 	left: 10px;
 	height: 100px;
-	width: 1000px;
+	width: 100px;
 	border-radius: 50%;
     background: rgb(43,31,87);
+    background: linear-gradient(270deg, rgb(61, 46, 117) 10%, rgba(62,43,130,1) 44%, rgba(31,20,71,1) 88%, rgba(33,18,52,1) 100%, rgba(54,19,98,1) 100%);
+    background-size: 400% 400%;
 	box-shadow: 0 0 50px #6e67ce, 0 0 100px #6e67ce, 0 0 150px #6e67ce, 0 0 200px #6e67ce;
 	animation: animate 5s ease-in-out infinite alternate;
     opacity: 0.3;
@@ -58,7 +60,7 @@
 		opacity: .7;
 	}
 	100% {
-		transform: translateX(800px) rotate(360deg);
+		transform: translateX(1000px) rotate(360deg);
 		opacity: 0;
 	}
 }
@@ -101,51 +103,51 @@
 }
 
 .each-lines:nth-child(2):before {
-    animation: bubble 3s linear infinite;
+    animation: bubble 10s linear infinite;
 }
 .each-lines:nth-child(4):before {
-    animation: bubble 5s linear infinite;
+    animation: bubble 8s linear infinite;
 }
 
 .each-lines:nth-child(6):before {
-    animation: bubble 5s linear infinite 2s;
+    animation: bubble 10s linear infinite 2s;
 }
 
 .each-lines:nth-child(8):before {
-    animation: bubble 5s linear infinite 4s;
+    animation: bubble 8s linear infinite 4s;
 }
 
 .each-lines:nth-child(10):before {
-    animation: bubble 3s linear infinite;
+    animation: bubble 10s linear infinite;
 }
 .each-lines:nth-child(12):before {
-    animation: bubble 5s linear infinite;
+    animation: bubble 8s linear infinite;
 }
 
 .each-lines:nth-child(14):before {
-    animation: bubble 5s linear infinite 2s;
+    animation: bubble 10s linear infinite 2s;
 }
 
 .each-lines:nth-child(16):before {
-    animation: bubble 5s linear infinite 4s;
+    animation: bubble 8s linear infinite 4s;
 }.each-lines:nth-child(18):before {
-    animation: bubble 3s linear infinite;
+    animation: bubble 10s linear infinite;
 }
 .each-lines:nth-child(20):before {
-    animation: bubble 5s linear infinite;
+    animation: bubble 8s linear infinite;
 }
 
 .each-lines:nth-child(22):before {
-    animation: bubble 5s linear infinite 2s;
+    animation: bubble 10s linear infinite 2s;
 }
 
 .each-lines:nth-child(24):before {
-    animation: bubble 5s linear infinite 4s;
+    animation: bubble 8s linear infinite 4s;
 }.each-lines:nth-child(1):before {
-    animation: bubble 3s linear infinite;
+    animation: bubble 10s linear infinite;
 }
 .each-lines:nth-child(26):before {
-    animation: bubble 5s linear infinite;
+    animation: bubble 8s linear infinite;
 }
 
 

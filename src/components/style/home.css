@@ -170,14 +170,11 @@
 
 .Home-lists{
     position: relative;
-    top: -550px;
+    top: -35em;
     width: 100%;
     z-index: 5;
     font-family: 'Nunito Sans', sans-serif;
     transition: 0.3s;
-}
-.minimized-home-list{
-top: -860px;
 }
 
 .Home-desc{

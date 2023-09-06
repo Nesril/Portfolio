@@ -78,10 +78,9 @@ const FirstViewText=()=>{
       return () => clearTimeout(timeout);
     }
   }, [currentIndex, delay, text]);
-  const matches = useMediaQuery('(max-width:800px)');
 
   return(
-    <div   className={`Home-lists ${matches&&"minimized-home-list"}`}>
+    <div   className={`Home-lists`}>
         <section  id="home" className='Home-desc'>
 
           <div className='Home-desc-left'>

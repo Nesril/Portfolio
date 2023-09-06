@@ -428,7 +428,6 @@ const Contact = () => {
           setLoading(false)
       }, (error) => {
         setLoading(false)
-          console.log(error);
           Error("Error occured, please try again!!")
       });
   };

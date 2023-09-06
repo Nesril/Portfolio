@@ -33,9 +33,9 @@ export default function Home() {
 
 const FirstView=()=>{
 let arr=[10,20,30,40,55,60,70,80,90,100,10,1,1,1,1,1,1,1]
-   
+const matches = useMediaQuery('(max-width:800px)');
   return(
-    <div className="bubble-container">
+    <div className={`bubble-container ${matches&&"bubble-container-small"}`}>
       <div className="wrapper">
          {arr.map((e,index)=>{
           return <div style={{animationDelay:`${index+3}s`,left:`${e}px`}} key={index}></div>

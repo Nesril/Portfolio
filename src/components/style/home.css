@@ -50,6 +50,10 @@
 	animation: animate 5s ease-in-out infinite alternate;
     opacity: 0.3;
 }
+.bubble-container-small .wrapper div{
+    width: 30px;
+    height: 30px;
+}
 
 @keyframes animate {
 	0% {
@@ -173,7 +177,7 @@
     transition: 0.3s;
 }
 .minimized-home-list{
-top: -640px;
+top: -860px;
 }
 
 .Home-desc{

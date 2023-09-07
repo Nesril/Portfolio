@@ -20,6 +20,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import 'swiper/css/bundle'
 
 import { message, Space } from 'antd';
+import { TypeAnimation } from 'react-type-animation';
 
 export default function Home() {
   return (
@@ -63,7 +64,7 @@ const LinesOnPage=()=>{
 }
 
 const FirstViewText=()=>{
-  let text=`<h1>Nesredin Haji</h1> <div>Mernstack Developer <br/> and <br/>Python Developer</div>`
+  let text="<h1>Nesredin Haji</h1> <div>Mernstack Developer </div> <div>and </div> <div>Python Developer</div>"
   let delay=100
     const [currentText, setCurrentText] = useState('');
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -85,7 +86,29 @@ const FirstViewText=()=>{
 
           <div className='Home-desc-left'>
               <div className='Home-desc-left-greet'>Hello I'm</div>
-              <span   className='Home-desc-left-postion' dangerouslySetInnerHTML={{ __html: currentText }}></span>
+              
+              <h1>
+              <TypeAnimation
+                      sequence={[
+                        `Nesrdin Haji `,
+                        500,
+                      ]}
+                      speed={50}
+                      cursor={false}
+                      style={{ whiteSpace: 'pre-line' }}
+                    />
+              </h1>
+              <div>
+                <TypeAnimation
+                        sequence={[
+                          `Mernstack Developer \n and \n Python Developer`,
+                          3000,
+                        ]}
+                        speed={50}
+                        cursor={false}
+                        style={{fontSize:"13px"}}
+                      />
+              </div>
           </div>
           <div className='Home-desc-right'><img src="/photo_2023-09-04_22-04-33-removebg-preview.png" width={100}/></div>
         </section>
@@ -105,7 +128,7 @@ const About=()=>{
     <motion.section  id="about"
       initial={{opacity:0,y:200}}
       whileInView={{opacity:1,y:0}}
-      transition={{duration:0.9}}
+      transition={{duration:0.5}}
       viewport={{once:true}}
       className='Home-about'>
         <h1>About</h1>
@@ -119,13 +142,13 @@ const About=()=>{
             <motion.div 
                 initial={{opacity:0,scale:0}}
                 whileInView={{opacity:1,scale:1}}
-                transition={{duration:0.9,delay:1}}
+                transition={{duration:0.5}}
                 ><img src="/javascript_logo.png" width={100}/></motion.div>
               <div>+</div>
               <motion.div 
                 initial={{opacity:0,scale:0}}
                 whileInView={{opacity:1,scale:1}}
-                transition={{duration:0.9,delay:3}}><img src="/Python-logo-notext.svg.png" width={100}/></motion.div>
+                transition={{duration:0.5,delay:2}}><img src="/Python-logo-notext.svg.png" width={100}/></motion.div>
             </div>
         </div>
 
@@ -144,7 +167,7 @@ const Experience = () => {
               initial={{opacity:0,x:-200}}
               whileInView={{opacity:1,x:0}} 
               viewport={{once:true}}
-              transition={{duration:0.9,delay:1}} className='Home-Experience-disc-each'>
+              transition={{duration:0.5}} className='Home-Experience-disc-each'>
           <div  className='Home-Experience-disc-each-image'><img src='/content_creator.png' width={20}/></div>
           <div className='Home-Experience-disc-each-expln'>
               <h3>Content Creation</h3>
@@ -157,7 +180,7 @@ const Experience = () => {
               initial={{opacity:0,x:-100}}
               whileInView={{opacity:1,x:0}} 
               viewport={{once:true}}
-              transition={{duration:0.9,delay:2}} className='Home-Experience-disc-each'>
+              transition={{duration:0.5}} className='Home-Experience-disc-each'>
           <div className='Home-Experience-disc-each-image'><img src='/frontend_pic.jpg' width={20}/></div>
           <div className='Home-Experience-disc-each-expln'>
               <h3>Frontend</h3>
@@ -170,7 +193,7 @@ const Experience = () => {
               whileInView={{opacity:1,x:0}} 
               viewport={{once:true}}
 
-              transition={{duration:0.9,delay:3}} className='Home-Experience-disc-each'>
+              transition={{duration:0.5}} className='Home-Experience-disc-each'>
            <div className='Home-Experience-disc-each-image'><img src='/backend.jpg' width={20}/></div>
            <div className='Home-Experience-disc-each-expln'>
               <h3>Backend Development</h3>
@@ -183,7 +206,7 @@ const Experience = () => {
               whileInView={{opacity:1,x:0}} 
               viewport={{once:true}}
 
-              transition={{duration:0.9,delay:1}} className='Home-Experience-disc-each'>
+              transition={{duration:0.5}} className='Home-Experience-disc-each'>
             <div className='Home-Experience-disc-each-image'><img src='/mongodb-atlas_database.webp' width={20}/></div>
             <div className='Home-Experience-disc-each-expln'>
               <h3>Database Management</h3>
@@ -196,7 +219,7 @@ const Experience = () => {
               whileInView={{opacity:1,x:0}} 
               viewport={{once:true}}
 
-              transition={{duration:0.9,delay:2}} className='Home-Experience-disc-each'>
+              transition={{duration:0.5}} className='Home-Experience-disc-each'>
            <div className='Home-Experience-disc-each-image'><img src='/machine_learning_pic.png' width={20}/></div>
           <div className='Home-Experience-disc-each-expln'>
               <h3>Machine Learning</h3>
@@ -209,7 +232,7 @@ const Experience = () => {
               whileInView={{opacity:1,x:0}} 
               viewport={{once:true}}
 
-              transition={{duration:0.9,delay:3}} className='Home-Experience-disc-each'>
+              transition={{duration:0.5}} className='Home-Experience-disc-each'>
            <div className='Home-Experience-disc-each-image'><img src='/nlp_poc.webp' width={20}/></div>
            <div className='Home-Experience-disc-each-expln'>
               <h3>Natural Language Processing (NLP)</h3>
@@ -257,7 +280,7 @@ const Skills=()=>{
                         initial={{opacity:0,y:200}}
                         whileInView={{opacity:1,y:0}} 
                         viewport={{once:true}}
-                        transition={{duration:0.9,delay:index}}  key={index} className='Home-skills-each'>
+                        transition={{duration:0.5}}  key={index} className='Home-skills-each'>
                           <h3>{e.name}</h3>
                              {e.skill.map((a,index)=>{
                                return  <div key={index} className='Home-skills-each-disc'>
@@ -350,17 +373,19 @@ return(
   <motion.div 
       initial={{opacity:0,y:200}}
       whileInView={{opacity:1,y:0}}
-      transition={{duration:0.9,delay:index}}
+      transition={{duration:0.5}}
       className='home-projects-each'
       viewport={{once:true}}>
 
-            <h3>{data?.name}</h3>
             <div className='home-projects-each-image'><Slider folder={data.folder} slides={data.pics}/></div>
-             <div className='home-projects-eachdisc'>{data.disc}</div>
-             <div className='home-projects-each-frameworks'>{data.frameworks}</div>
-            <div className='home-projects-each-links'>
-               {data.url&&<div><Link href={data.url}><Button>Demo</Button></Link></div>}
-                <div><Link href={data.github}><IconButton ><GitHubIcon/></IconButton></Link></div>
+            <div style={{  padding: "10px 30px 10px 30px"}}>
+                <h3>{data?.name}</h3>
+                <div className='home-projects-eachdisc'>{data.disc}</div>
+                <div className='home-projects-each-frameworks'>{data.frameworks}</div>
+                <div className='home-projects-each-links'>
+                  {data.url&&<div><Link href={data.url}><Button>Demo</Button></Link></div>}
+                    <div><Link href={data.github}><IconButton ><GitHubIcon/></IconButton></Link></div>
+                </div>
             </div>
   </motion.div>
 )
@@ -440,7 +465,7 @@ const Contact = () => {
          <motion.div 
               initial={{opacity:0,y:200}}
               whileInView={{opacity:1,y:0}}
-              transition={{duration:0.9}}
+              transition={{duration:0.5}}
               viewport={{once:true}} className='home-contact-form'>
                 <form ref={form} onSubmit={sendEmail}>
                   <div className='home-contact-form-name'><label>Name</label></div>
@@ -457,7 +482,7 @@ const Contact = () => {
             <motion.div 
               initial={{opacity:0,scale:0}}
               whileInView={{opacity:1,scale:1}}
-              transition={{duration:0.9}}
+              transition={{duration:0.5}}
               viewport={{once:true}}  className='home-contact-Image'>
               <img src='/2b07f62987e987d4e53e84aa8b963b-unscreen.gif' width={200} />
             </motion.div>

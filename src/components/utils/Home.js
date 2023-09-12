@@ -110,7 +110,7 @@ const FirstViewText=()=>{
                       />
               </div>
           </div>
-          <div className='Home-desc-right'><img src="/photo_2023-09-04_22-04-33-removebg-preview.png" width={100}/></div>
+          <div className='Home-desc-right'><img src="/photo_2023-09-11_22-37-40.jpg" width={100}/></div>
         </section>
         <About/>
         <Experience/>

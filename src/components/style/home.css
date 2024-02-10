@@ -376,7 +376,8 @@
 }
 
 .home-projects-each h3{
-    color:#8067ee
+    color:rgb(170, 152, 252);
+   font-size: 28px;
 }
 
 .home-projects-each-image{

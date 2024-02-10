@@ -450,7 +450,7 @@
 }
 
 
-  .home-contact{
+.home-contact{
     margin-top: 150px;
   }
   .home-contact h1{
@@ -618,7 +618,6 @@
     .home-projects-each-image{
         width: 90%;
         height:350px;
-        background-color: #6e67ce;
     }
 }
 

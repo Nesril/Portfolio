@@ -98,15 +98,15 @@ const FirstViewText=()=>{
                       style={{ whiteSpace: 'pre-line',fontSize:"40px" }}
                     />
               </h1>
-              <div>
+              <div style={{marginBottom:"30px"}}>
                 <TypeAnimation
                         sequence={[
-                          `Mernstack Developer \n and \n Python Developer`,
+                          `MERNstack Developer 💻 & Python Developer 🐍`,
                           3000,
                         ]}
                         speed={50}
                         cursor={false}
-                        style={{fontSize:"13px"}}
+                        style={{fontSize:"16px"}}
                       />
               </div>
           </div>

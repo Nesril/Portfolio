@@ -95,7 +95,7 @@ const FirstViewText=()=>{
                       ]}
                       speed={50}
                       cursor={false}
-                      style={{ whiteSpace: 'pre-line' }}
+                      style={{ whiteSpace: 'pre-line',fontSize:"40px" }}
                     />
               </h1>
               <div>
@@ -110,12 +110,13 @@ const FirstViewText=()=>{
                       />
               </div>
           </div>
-          <div className='Home-desc-right'><img src="/photo_2023-09-11_22-37-40.jpg" width={100}/></div>
+          <div className='Home-desc-right'><img src="/photo_2023-09-11_22-37-40.jpg" width={200}/></div>
         </section>
         <About/>
-        <Experience/>
+        <Services/>
         <Skills/>
         <Projects/>
+        <Experience/>
         <Contact/>
     </div>
 
@@ -131,7 +132,10 @@ const About=()=>{
       transition={{duration:0.5}}
       viewport={{once:true}}
       className='Home-about'>
-        <h1>About</h1>
+        <div className='Home-about-image'>
+            <h1 style={{fontSize:"40px"}}>About me</h1>
+           <img src='rear-view-programmer-working-all-night-long_1098-18697.jpg'/>
+        </div>
         <div className='Home-about-disc'>
             <p>I am an experienced and enthusiastic MERN (MongoDB, Express.js, React.js, Node.js) + Python developer with more than 1 and a half years of professional experience. Throughout my career, I have developed a strong foundation in full-stack web development and have worked on various projects, from creating responsive user interfaces to implementing server-side logic and managing databases.
             </p>
@@ -156,11 +160,11 @@ const About=()=>{
   )
 }
 
-const Experience = () => {
+const Services = () => {
   return (
     <section  id="services"
     className='Home-Experience'>
-      <h1>Services</h1>
+      <h1 style={{fontSize:"40px"}}>Services</h1>
       <div className='Home-Experience-disc'>
 
         <motion.div 
@@ -251,11 +255,15 @@ const Skills=()=>{
   let skills=[
     {
       name:"Frontend",
-      skill:["HTML",'CSS','Javascript',"React js","Next js"]
+      skill:["HTML",'CSS','Javascript',"React js","Next js","React-Native"]
     },
     {
       name:"Backend",
-      skill:["Node js",'MongoDB',"Django"]
+      skill:["Node js","Django","Flask"]
+    },
+    {
+      name:"Database",
+      skill:["MongoDB",'PostgreSQL',"Prisma"]
     },
     {
       name:"AI",
@@ -272,7 +280,7 @@ const Skills=()=>{
   ]
   return(
     <section id="skills" className='Home-skills'>
-          <h1>Skills</h1>
+          <h1 style={{fontSize:"40px"}}>Skills</h1>
           <div className='Home-skills-all'>
               {skills.map((e,index)=>{
 
@@ -300,6 +308,33 @@ const Projects=()=>{
 
   const Projects=[
     {
+      name:"Dukana",
+      disc:"Dukana is an innovative e-commerce and social media platform known as 'shope media'. It revolutionizes online buying and selling with unique and mind-blowing features like location-based filtering and coin management, creating a thriving marketplace for buyers and sellers.",
+      github:"",
+      url:"https://dukana.netlify.app/",
+      folder:"dukana",
+      frameworks:"Express js + React js + Python + Flask + MongoDB",
+      pics:["Screenshot (148).png","Screenshot (149).png","Screenshot (150).png","Screenshot (151).png","Screenshot (152).png",
+          "Screenshot (153).png","Screenshot (154).png","Screenshot (155).png","Screenshot (156).png",
+          "Screenshot (157).png","Screenshot (158).png","Screenshot (159).png","Screenshot (160).png",
+          "Screenshot (161).png","Screenshot (162).png","Screenshot (163).png","Screenshot (164).png",
+          "Screenshot (165).png","Screenshot (166).png","Screenshot (167).png","Screenshot (168).png",
+          "Screenshot (169).png","Screenshot (170).png","Screenshot (171).png","photo_2024-02-10_08-47-17.jpg",
+          "photo_2024-02-10_08-47-45.jpg","photo_2024-02-10_08-47-51.jpg","photo_2024-02-10_08-47-57.jpg"
+        ]
+    },
+    {
+      name:"Alif Developers",
+      disc:"Our bootcamp offers a diverse range of programming languages to aspiring students. We provide comprehensive training in various programming languages, ensuring that students gain proficiency in their chosen field. Our unique approach includes grouping students into cohorts and assigning dedicated mentors to guide and support them throughout their learning journey. By pairing students with experienced mentors, we foster a collaborative and personalized learning environment, enabling students to develop their skills effectively. Join our bootcamp and embark on a rewarding educational experience in your desired programming language.",
+      url:"https://alifdevelopers01.netlify.app/",
+      frameworks:"Javascript + Python + MongoDB",
+      folder:"alif",
+      pics:["Screenshot (4).png","Screenshot (5).png","Screenshot (6).png",
+      "Screenshot (7).png","Screenshot (8).png","Screenshot (9).png","Screenshot (10).png","Screenshot (11).png",
+      "Screenshot (12).png","Screenshot (13).png","Screenshot (14).png","Screenshot (15).png","Screenshot (16).png",
+      "Screenshot (17).png","Screenshot (18).png",]
+    }
+    ,{
       name:"Bullo Doc Field",
       disc:"This website is a sophisticated tool that facilitates the comparison of documents stored within a document store with other files you wish to check for similarity. It provides a comprehensive solution for identifying similarities between the documents in the store and the files you want to analyze. Additionally, the platform offers robust functionality for document and text summarization, allowing you to generate concise summaries for both documents and text passages. With thus website, you can effortlessly examine document similarity and leverage powerful summarization capabilities to extract key insights from your files.",
       github:"https://github.com/Nesril/Bullo_Doc_Field",
@@ -340,22 +375,11 @@ const Projects=()=>{
       "Screenshot (110).png","Screenshot (111).png","Screenshot (112).png","Screenshot (113).png",
       "Screenshot (114).png","Screenshot (115).png",]
     },
-    {
-      name:"Alif Developers",
-      github:"https://github.com/Nesril/Alif-Developers",
-      disc:"Our bootcamp offers a diverse range of programming languages to aspiring students. We provide comprehensive training in various programming languages, ensuring that students gain proficiency in their chosen field. Our unique approach includes grouping students into cohorts and assigning dedicated mentors to guide and support them throughout their learning journey. By pairing students with experienced mentors, we foster a collaborative and personalized learning environment, enabling students to develop their skills effectively. Join our bootcamp and embark on a rewarding educational experience in your desired programming language.",
-      url:"https://alifdevelopers01.netlify.app/",
-      frameworks:"Javascript + Python + MongoDB",
-      folder:"alif",
-      pics:["Screenshot (4).png","Screenshot (5).png","Screenshot (6).png",
-      "Screenshot (7).png","Screenshot (8).png","Screenshot (9).png","Screenshot (10).png","Screenshot (11).png",
-      "Screenshot (12).png","Screenshot (13).png","Screenshot (14).png","Screenshot (15).png","Screenshot (16).png",
-      "Screenshot (17).png","Screenshot (18).png",]
-    }
+    
   ]
   return(
     <section id="projects" className='home-projects'>
-       <h1>Projects</h1>
+       <h1 style={{fontSize:"40px"}}>Projects</h1>
        <div className='home-projects-all'>
          
            {Projects.map((e,index)=>{
@@ -376,17 +400,17 @@ return(
       transition={{duration:0.5}}
       className='home-projects-each'
       viewport={{once:true}}>
-
             <div className='home-projects-each-image'><Slider folder={data.folder} slides={data.pics}/></div>
-            <div style={{  padding: "10px 30px 10px 30px"}}>
+            <div style={{  padding: "10px 30px 10px 30px",width:"300px"}}>
                 <h3>{data?.name}</h3>
                 <div className='home-projects-eachdisc'>{data.disc}</div>
                 <div className='home-projects-each-frameworks'>{data.frameworks}</div>
                 <div className='home-projects-each-links'>
-                  {data.url&&<div><Link href={data.url}><Button>Demo</Button></Link></div>}
-                    <div><Link href={data.github}><IconButton ><GitHubIcon/></IconButton></Link></div>
+                  {data.url&&<div><Link  target="_blank" href={data.url}><Button style={{background:"red",color:"white"}}>Live</Button></Link></div>}
+                  {data.github&& <div><Link  target="_blank" href={data.github}><IconButton ><GitHubIcon/></IconButton></Link></div>}
                 </div>
             </div>
+
   </motion.div>
 )
 }
@@ -419,7 +443,47 @@ const Slider = ({ slides,folder }) => {
 
 }
 
+const Experience=()=>{
+  let experiences=[
+     {
+      comapny:"Alif Developers",
+      postions:"Founder and Mentor (Javascript + Python)",
+      Data:"Dec, 2022-present",
+      area:"Remote"
+     },{
+      comapny:"HexLabs",
+      postions:"Mernstack Developer",
+      Data:"Sep, 2023 - Nov, 2023",
+      area:"On-site"
+     },
+     {
+      comapny:"POSTTHETRUCK.com",
+      postions:"Mernstack Developer",
+      Data:"Dec, 2023 - Present",
+      area:"Remote"
+     },
+  ]
+  return(
+    <section id='experiences' className='home-jobs'>
+       <h1 style={{fontSize:"40px"}}>Experiences</h1>
+       <div className='home-jobs-contents'>
+          <div>
+              {experiences.map((e,index)=>{
+                  return(
+                    <div key={index} className='home-jobs-each'>
+                          <div style={{fontSize:"30px",color:"#b86cff"}}>{e.comapny}</div>
+                          <div> {e.postions}</div>
+                          <div style={{fontSize:"15px",opacity:0.8}}>{e.area}</div>
+                          <div  style={{fontSize:"12px",opacity:0.6}}> {e.Data}</div>
+                    </div>
+                  )
+              })}
 
+          </div>
+       </div>
+    </section>
+  )
+}
 
 const Contact = () => {
   const form = useRef();
@@ -460,7 +524,7 @@ const Contact = () => {
   return (
     <section id="contact" className='home-contact'>
           {contextHolder}
-         <h1>Contact</h1>
+         <h1 style={{fontSize:"40px"}}>Contact</h1>
          <div  className='home-contact-section'>
          <motion.div 
               initial={{opacity:0,y:200}}
@@ -488,12 +552,28 @@ const Contact = () => {
             </motion.div>
 
          </div>
+         <div style={{marginTop:"100px",display:"flex",justifyContent:"center",alignItems:"center"}}> 
+            <div >
+                Available for services & project 🤠
+                <div>📨 Email: nesredinhaji715@gmail.com</div> 
+                <div>💬 WhatsApp +251932751336</div>
+
+            </div>
+          </div>
          <div className='home-contact-links'>
-               <div><a  target="_blank"  href="https://nesredinhaji715@gmail.com"><IconButton ><EmailIcon className='home-contact-links-email'/></IconButton></a></div>
-               <div><a  target="_blank" href="https://github.com/Nesril"><IconButton><GitHubIcon className='home-contact-links-github'/></IconButton></a></div>
-               <div><a  target="_blank" href="https://www.linkedin.com/in/nesril03/"><IconButton><LinkedInIcon className='home-contact-links-linked'/></IconButton></a></div>
-               <div><a  target="_blank" href="https://web.telegram.org/k/#@nesril03"><IconButton><TelegramIcon className='home-contact-links-telegram'/></IconButton></a></div>
-               <div><a  target="_blank" href="https://www.instagram.com/nesril135/"><IconButton><InstagramIcon className='home-contact-links-insta'/></IconButton></a></div>
+               <div>Let's Connect on 👉</div>
+               <div style={{display:"flex",justifyContent:"center",alignItems:"center",gap:"5px",flexWrap:"wrap"}}>
+                  <div><a  target="_blank" href="https://www.linkedin.com/in/nesril03/">
+                      LinkedIn ||
+                    </a></div>
+                  <div><a  target="_blank" href="https://web.telegram.org/k/#@nesril03">
+                      Telegram  ||
+                    </a></div>
+                  <div><a  target="_blank" href="https://www.instagram.com/nesril135/">
+                      Instagram
+                    </a></div>
+
+               </div>
          </div>
     </section>
   );

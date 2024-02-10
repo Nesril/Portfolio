@@ -7,7 +7,7 @@ import BeenhereIcon from '@mui/icons-material/Beenhere';
 import PropaneTankIcon from '@mui/icons-material/PropaneTank';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import { IconButton } from '@mui/material';
-
+import WorkIcon from '@mui/icons-material/Work';
 export default function Header() {
   const [activeSection, setActiveSection] = useState('home');
 
@@ -41,7 +41,8 @@ export default function Header() {
     };
   }, []);
 
-  const matches = useMediaQuery('(max-width:800px)');
+  const matches = useMediaQuery('(max-width:1000px)');
+  const reduceSize = useMediaQuery('(max-width:500px)');
 
   let [scrollEffect,setScrollEffect]=useState(false)
   let [scroly,setScroly]=useState(0)
@@ -59,6 +60,7 @@ export default function Header() {
 
  window.addEventListener("scroll",handleScroll)
  },[scroly])
+ 
   return (
     <>
        {(matches||scrollEffect)?
@@ -69,27 +71,33 @@ export default function Header() {
                     
                     <div  onClick={() => scrollToSection('about')}
                       className={activeSection === 'about' ? 'active' : ''} >
-                        <IconButton><InfoIcon/></IconButton>
+                        <IconButton ><InfoIcon style={{fontSize:reduceSize&&"20px"}}/></IconButton>
                     </div>
                     
                     <div   onClick={() => scrollToSection('services')}
                         className={activeSection === 'services' ? 'active' : ''}>
-                          <IconButton><ManageAccountsIcon/></IconButton>
+                          <IconButton><ManageAccountsIcon style={{fontSize:reduceSize&&"20px"}} /></IconButton>
                     </div>
 
                     <div   onClick={() => scrollToSection('skills')}
                         className={activeSection === 'skills' ? 'active' : ''}>
-                          <IconButton><BeenhereIcon/></IconButton>
+                          <IconButton><BeenhereIcon  style={{fontSize:reduceSize&&"20px"}}/></IconButton>
                     </div>
 
                     <div   onClick={() => scrollToSection('projects')}
                         className={activeSection === 'projects' ? 'active' : ''}>
-                        <IconButton><PropaneTankIcon/></IconButton>
+                        <IconButton><PropaneTankIcon  style={{fontSize:reduceSize&&"20px"}}/></IconButton>
                     </div>
                     
+                    <div   onClick={() => scrollToSection('experiences')}
+                        className={activeSection === 'experiences' ? 'active' : ''}>
+                          <IconButton><WorkIcon  style={{fontSize:reduceSize&&"20px"}}/></IconButton>
+                    </div>
+
+
                     <div   onClick={() => scrollToSection('contact')}
                         className={activeSection === 'contact' ? 'active' : ''}>
-                          <IconButton><ConnectWithoutContactIcon/></IconButton>
+                          <IconButton><ConnectWithoutContactIcon  style={{fontSize:reduceSize&&"20px"}}/></IconButton>
                     </div>
 
             </div>
@@ -123,6 +131,12 @@ export default function Header() {
               className={activeSection === 'skills' ? 'active' : ''}
             >
               Skills
+            </div>
+            <div
+              onClick={() => scrollToSection('experiences')}
+              className={activeSection === 'experiences' ? 'active' : ''}
+            >
+              Experience
             </div>
             <div
               onClick={() => scrollToSection('projects')}

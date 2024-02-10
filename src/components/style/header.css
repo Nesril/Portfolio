@@ -51,10 +51,16 @@
     transition: 0.3s;
     box-shadow:  rgb(103, 90, 151) 0px 54px 55px,  rgb(103, 90, 151) 0px -12px 30px,  rgb(103, 90, 151) 0px 4px 6px,  rgb(103, 90, 151)0px 12px 13px,  rgb(103, 90, 151) 0px -3px 5px;
 }
+
 .sized_header img{
     cursor: pointer;
     width: 40px;
     transition: 0.3s;
+}
+@media(max-width:500px){
+    .sized_header img{
+        width: 30px;
+    }
 }
 .sized_header div{
     background-color: rgb(103, 90, 151);

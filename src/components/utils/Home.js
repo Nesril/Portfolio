@@ -137,10 +137,14 @@ const About=()=>{
            <img src='rear-view-programmer-working-all-night-long_1098-18697.jpg'/>
         </div>
         <div className='Home-about-disc'>
-            <p>I am an experienced and enthusiastic MERN (MongoDB, Express.js, React.js, Node.js) + Python developer with more than 1 and a half years of professional experience. Throughout my career, I have developed a strong foundation in full-stack web development and have worked on various projects, from creating responsive user interfaces to implementing server-side logic and managing databases.
-            </p>
             <p>
-            I am a driven and dedicated developer with a passion for coding, problem-solving, and continuous skill enhancement. Thriving on cutting-edge technologies and industry trends, I deliver high-quality solutions that meet client requirements and provide exceptional user experiences. Additionally, as a collaborative team player experienced in fast-paced, agile development environments, I eagerly embrace new challenges to contribute to project success.
+                <h3>Hey there! <span class="emoji">👋</span> </h3>
+                Let me paint you a picture of who I am! <span class="emoji">🎨</span> <br/>
+                I'm not just your run-of-the-mill developer; I'm an energetic and experienced MERN (MongoDB, Express.js, React.js, Node.js) + Python enthusiast with over 2 years of professional journey under my belt! <span class="emoji">🚀</span> <br/>
+                From crafting sleek user interfaces that dance seamlessly across screens to diving deep into the server-side abyss to handle all the data intricacies, I've done it all! <span class="emoji">💼</span> <br/>
+                But what sets me apart? It's my burning passion for coding, my relentless pursuit of solving problems, and my never-ending quest to level up my skills! <span class="emoji">🌟</span> <br/>
+                I'm like a sponge soaking up the latest and greatest in technology and industry trends, and I don't just stop there. I turn that knowledge into top-notch solutions that not only meet client expectations but also leave users with that "Wow!" experience. <span class="emoji">😎</span> <br/>
+                Oh, and teamwork? It's my jam! <span class="emoji">🎵</span> I thrive in fast-paced, agile environments, collaborating with teammates to tackle challenges head-on and deliver project success. Bring it on! <span class="emoji">💪</span>
             </p>
             <div className='Home-about-disc-pics'> 
             <motion.div 

@@ -238,6 +238,14 @@
     align-items: center;
     gap: 20px;
 }
+.Home-about .container {
+    text-align: center;
+}
+.Home-about .emoji {
+    font-size: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
 
 .Home-about h1{
   transform: translateY(100px);
@@ -255,7 +263,6 @@
 .Home-about-disc{
     line-height: 1.5;
     border-radius: 20px;
-    font-size: 13px;
 }
 .Home-about-disc-pics{
     display: flex;

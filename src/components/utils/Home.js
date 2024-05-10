@@ -453,18 +453,21 @@ const Experience=()=>{
       comapny:"Alif Developers",
       postions:"Founder and Mentor (Javascript + Python)",
       Data:"Dec, 2022-present",
-      area:"Remote"
+      area:"Remote",
+      route:'https://alifdevelopers01.netlify.app/'
      },{
       comapny:"HexLabs",
       postions:"Mernstack Developer",
       Data:"Sep, 2023 - Nov, 2023",
-      area:"On-site"
+      area:"On-site",
+      route:"https://hexlabs.tech/"
      },
      {
-      comapny:"POSTTHETRUCK.com",
+      comapny:"Freight Canvas",
       postions:"Mernstack Developer",
       Data:"Dec, 2023 - Present",
-      area:"Remote"
+      area:"Remote",
+      route:"https://freightcanvas.com/"
      },
   ]
   return(
@@ -475,7 +478,9 @@ const Experience=()=>{
               {experiences.map((e,index)=>{
                   return(
                     <div key={index} className='home-jobs-each'>
-                          <div style={{fontSize:"30px",color:"#b86cff"}}>{e.comapny}</div>
+                          <div style={{fontSize:"30px",color:"#b86cff"}}>
+                              <a style={{color:'inherit',textDecoration:"none"}} href={e.route} target='__blank'>{e.comapny}</a> 
+                           </div>
                           <div> {e.postions}</div>
                           <div style={{fontSize:"15px",opacity:0.8}}>{e.area}</div>
                           <div  style={{fontSize:"12px",opacity:0.6}}> {e.Data}</div>

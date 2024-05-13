@@ -449,18 +449,19 @@ const Slider = ({ slides,folder }) => {
 
 const Experience=()=>{
   let experiences=[
-     {
-      comapny:"Alif Developers",
-      postions:"Founder and Mentor (Javascript + Python)",
-      Data:"Dec, 2022-present",
-      area:"Remote",
-      route:'https://alifdevelopers01.netlify.app/'
-     },{
+    {
       comapny:"HexLabs",
       postions:"Mernstack Developer",
       Data:"Sep, 2023 - Nov, 2023",
       area:"On-site",
       route:"https://hexlabs.tech/"
+     },
+     {
+      comapny:"Alif Developers",
+      postions:"Founder and Mentor (Javascript + Python)",
+      Data:"Feb, 2022-present",
+      area:"Remote",
+      route:'https://alifdevelopers01.netlify.app/'
      },
      {
       comapny:"Freight Canvas",

@@ -101,7 +101,7 @@ const FirstViewText=()=>{
               <div style={{marginBottom:"30px"}}>
                 <TypeAnimation
                         sequence={[
-                          `MERNstack Developer 💻 & Python Developer 🐍`,
+                          `🚀 Full Stack Developer (MERN + Python) 🐍`,
                           3000,
                         ]}
                         speed={50}
